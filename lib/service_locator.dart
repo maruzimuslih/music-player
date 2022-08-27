@@ -6,5 +6,5 @@ GetIt get serviceLocator => GetIt.instance;
 
 void initServiceLocator() {
   serviceLocator.registerSingleton<SearchApi>(SearchApi());
-  serviceLocator.registerSingleton<SearchBloc>(SearchBloc());
+  serviceLocator.registerSingleton<SongBloc>(SongBloc());
 }

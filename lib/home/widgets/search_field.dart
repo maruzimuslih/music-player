@@ -5,7 +5,7 @@ import 'package:music_player/service_locator.dart';
 class SearchBar extends StatelessWidget {
   SearchBar({Key? key}) : super(key: key);
 
-  final _searchBloc = serviceLocator<SearchBloc>();
+  final _searchBloc = serviceLocator<SongBloc>();
   final _searchQuery = TextEditingController();
 
   @override

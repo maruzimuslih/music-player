@@ -12,13 +12,13 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final _searchBloc = serviceLocator<SearchBloc>();
+  final _songBloc = serviceLocator<SongBloc>();
 
   @override
   void initState() {
     super.initState();
-    _searchBloc.clearSearchResultsStream();
-    _searchBloc.getSongs();
+    _songBloc.clearSearchResultsStream();
+    _songBloc.getSongs();
   }
 
   @override
@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             SearchBar(),
             StreamBuilder<List<SearchResult>?>(
-              stream: _searchBloc.searchReultList,
+              stream: _songBloc.searchReultStream,
               builder: (context, snapshot) {
                 var searchList = snapshot.data;
                 if (searchList == null) {
@@ -43,25 +43,30 @@ class _HomePageState extends State<HomePage> {
                       itemCount: searchList.length,
                       itemBuilder: (BuildContext context, int position) {
                         var data = searchList[position];
-                        return Card(
-                          child: ListTile(
-                            leading: Image.network(data.artworkUrl60!),
-                            title: Text(
-                              data.trackCensoredName!,
-                              style:
-                                  const TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            subtitle: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  data.artistName!,
-                                  style: const TextStyle(
-                                      fontWeight: FontWeight.bold),
-                                ),
-                                const SizedBox(height: 3.0),
-                                Text(data.collectionName!)
-                              ],
+                        return InkWell(
+                          onTap: () {
+                            _songBloc.setPlaySong(isPlaying: true);
+                          },
+                          child: Card(
+                            child: ListTile(
+                              leading: Image.network(data.artworkUrl60!),
+                              title: Text(
+                                data.trackCensoredName!,
+                                style: const TextStyle(
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              subtitle: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    data.artistName!,
+                                    style: const TextStyle(
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  const SizedBox(height: 3.0),
+                                  Text(data.collectionName!)
+                                ],
+                              ),
                             ),
                           ),
                         );
@@ -73,6 +78,60 @@ class _HomePageState extends State<HomePage> {
             ),
           ],
         ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      floatingActionButton: StreamBuilder<bool>(
+        stream: _songBloc.playSongStream,
+        builder: (context, snapshot) {
+          var isPlaying = snapshot.data ?? false;
+          if (!isPlaying) {
+            return const SizedBox.shrink();
+          } else {
+            return Container(
+              height: 100.0,
+              width: MediaQuery.of(context).size.width,
+              padding: const EdgeInsets.all(16.0),
+              color: Colors.grey.shade300,
+              child: Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          Icons.skip_previous,
+                          size: 36.0,
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 24.0),
+                        child: IconButton(
+                          onPressed: () {
+                            _songBloc.setPlaySong(isPlaying: false);
+                          },
+                          icon: const Icon(
+                            Icons.play_arrow,
+                            size: 36.0,
+                          ),
+                        ),
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          Icons.skip_next,
+                          size: 36.0,
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 16.0),
+                  const LinearProgressIndicator(value: 0.5),
+                ],
+              ),
+            );
+          }
+        },
       ),
     );
   }
