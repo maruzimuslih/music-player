@@ -22,37 +22,37 @@ class _$SearchResultTearOff {
   const _$SearchResultTearOff();
 
   _SearchResult call(
-      {required String wrapperType,
-      required String kind,
-      required int artistId,
-      required int collectionId,
-      required int trackId,
-      required String artistName,
-      required String collectionName,
-      required String trackName,
-      required String collectionCensoredName,
-      required String trackCensoredName,
-      required String artistViewUrl,
-      required String collectionViewUrl,
-      required String trackViewUrl,
-      required String previewUrl,
-      required String artworkUrl30,
-      required String artworkUrl60,
-      required String artworkUrl100,
-      required double collectionPrice,
-      required double trackPrice,
-      required String releaseDate,
-      required String collectionExplicitness,
-      required String trackExplicitness,
-      required int discCount,
-      required int discNumber,
-      required int trackCount,
-      required int trackNumber,
-      required int trackTimeMillis,
-      required String country,
-      required String currency,
-      required String primaryGenreName,
-      required bool isStreamable}) {
+      {String? wrapperType,
+      String? kind,
+      int? artistId,
+      int? collectionId,
+      int? trackId,
+      String? artistName,
+      String? collectionName,
+      String? trackName,
+      String? collectionCensoredName,
+      String? trackCensoredName,
+      String? artistViewUrl,
+      String? collectionViewUrl,
+      String? trackViewUrl,
+      String? previewUrl,
+      String? artworkUrl30,
+      String? artworkUrl60,
+      String? artworkUrl100,
+      double? collectionPrice,
+      double? trackPrice,
+      String? releaseDate,
+      String? collectionExplicitness,
+      String? trackExplicitness,
+      int? discCount,
+      int? discNumber,
+      int? trackCount,
+      int? trackNumber,
+      int? trackTimeMillis,
+      String? country,
+      String? currency,
+      String? primaryGenreName,
+      bool? isStreamable}) {
     return _SearchResult(
       wrapperType: wrapperType,
       kind: kind,
@@ -98,37 +98,37 @@ const $SearchResult = _$SearchResultTearOff();
 
 /// @nodoc
 mixin _$SearchResult {
-  String get wrapperType => throw _privateConstructorUsedError;
-  String get kind => throw _privateConstructorUsedError;
-  int get artistId => throw _privateConstructorUsedError;
-  int get collectionId => throw _privateConstructorUsedError;
-  int get trackId => throw _privateConstructorUsedError;
-  String get artistName => throw _privateConstructorUsedError;
-  String get collectionName => throw _privateConstructorUsedError;
-  String get trackName => throw _privateConstructorUsedError;
-  String get collectionCensoredName => throw _privateConstructorUsedError;
-  String get trackCensoredName => throw _privateConstructorUsedError;
-  String get artistViewUrl => throw _privateConstructorUsedError;
-  String get collectionViewUrl => throw _privateConstructorUsedError;
-  String get trackViewUrl => throw _privateConstructorUsedError;
-  String get previewUrl => throw _privateConstructorUsedError;
-  String get artworkUrl30 => throw _privateConstructorUsedError;
-  String get artworkUrl60 => throw _privateConstructorUsedError;
-  String get artworkUrl100 => throw _privateConstructorUsedError;
-  double get collectionPrice => throw _privateConstructorUsedError;
-  double get trackPrice => throw _privateConstructorUsedError;
-  String get releaseDate => throw _privateConstructorUsedError;
-  String get collectionExplicitness => throw _privateConstructorUsedError;
-  String get trackExplicitness => throw _privateConstructorUsedError;
-  int get discCount => throw _privateConstructorUsedError;
-  int get discNumber => throw _privateConstructorUsedError;
-  int get trackCount => throw _privateConstructorUsedError;
-  int get trackNumber => throw _privateConstructorUsedError;
-  int get trackTimeMillis => throw _privateConstructorUsedError;
-  String get country => throw _privateConstructorUsedError;
-  String get currency => throw _privateConstructorUsedError;
-  String get primaryGenreName => throw _privateConstructorUsedError;
-  bool get isStreamable => throw _privateConstructorUsedError;
+  String? get wrapperType => throw _privateConstructorUsedError;
+  String? get kind => throw _privateConstructorUsedError;
+  int? get artistId => throw _privateConstructorUsedError;
+  int? get collectionId => throw _privateConstructorUsedError;
+  int? get trackId => throw _privateConstructorUsedError;
+  String? get artistName => throw _privateConstructorUsedError;
+  String? get collectionName => throw _privateConstructorUsedError;
+  String? get trackName => throw _privateConstructorUsedError;
+  String? get collectionCensoredName => throw _privateConstructorUsedError;
+  String? get trackCensoredName => throw _privateConstructorUsedError;
+  String? get artistViewUrl => throw _privateConstructorUsedError;
+  String? get collectionViewUrl => throw _privateConstructorUsedError;
+  String? get trackViewUrl => throw _privateConstructorUsedError;
+  String? get previewUrl => throw _privateConstructorUsedError;
+  String? get artworkUrl30 => throw _privateConstructorUsedError;
+  String? get artworkUrl60 => throw _privateConstructorUsedError;
+  String? get artworkUrl100 => throw _privateConstructorUsedError;
+  double? get collectionPrice => throw _privateConstructorUsedError;
+  double? get trackPrice => throw _privateConstructorUsedError;
+  String? get releaseDate => throw _privateConstructorUsedError;
+  String? get collectionExplicitness => throw _privateConstructorUsedError;
+  String? get trackExplicitness => throw _privateConstructorUsedError;
+  int? get discCount => throw _privateConstructorUsedError;
+  int? get discNumber => throw _privateConstructorUsedError;
+  int? get trackCount => throw _privateConstructorUsedError;
+  int? get trackNumber => throw _privateConstructorUsedError;
+  int? get trackTimeMillis => throw _privateConstructorUsedError;
+  String? get country => throw _privateConstructorUsedError;
+  String? get currency => throw _privateConstructorUsedError;
+  String? get primaryGenreName => throw _privateConstructorUsedError;
+  bool? get isStreamable => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -142,37 +142,37 @@ abstract class $SearchResultCopyWith<$Res> {
           SearchResult value, $Res Function(SearchResult) then) =
       _$SearchResultCopyWithImpl<$Res>;
   $Res call(
-      {String wrapperType,
-      String kind,
-      int artistId,
-      int collectionId,
-      int trackId,
-      String artistName,
-      String collectionName,
-      String trackName,
-      String collectionCensoredName,
-      String trackCensoredName,
-      String artistViewUrl,
-      String collectionViewUrl,
-      String trackViewUrl,
-      String previewUrl,
-      String artworkUrl30,
-      String artworkUrl60,
-      String artworkUrl100,
-      double collectionPrice,
-      double trackPrice,
-      String releaseDate,
-      String collectionExplicitness,
-      String trackExplicitness,
-      int discCount,
-      int discNumber,
-      int trackCount,
-      int trackNumber,
-      int trackTimeMillis,
-      String country,
-      String currency,
-      String primaryGenreName,
-      bool isStreamable});
+      {String? wrapperType,
+      String? kind,
+      int? artistId,
+      int? collectionId,
+      int? trackId,
+      String? artistName,
+      String? collectionName,
+      String? trackName,
+      String? collectionCensoredName,
+      String? trackCensoredName,
+      String? artistViewUrl,
+      String? collectionViewUrl,
+      String? trackViewUrl,
+      String? previewUrl,
+      String? artworkUrl30,
+      String? artworkUrl60,
+      String? artworkUrl100,
+      double? collectionPrice,
+      double? trackPrice,
+      String? releaseDate,
+      String? collectionExplicitness,
+      String? trackExplicitness,
+      int? discCount,
+      int? discNumber,
+      int? trackCount,
+      int? trackNumber,
+      int? trackTimeMillis,
+      String? country,
+      String? currency,
+      String? primaryGenreName,
+      bool? isStreamable});
 }
 
 /// @nodoc
@@ -221,127 +221,127 @@ class _$SearchResultCopyWithImpl<$Res> implements $SearchResultCopyWith<$Res> {
       wrapperType: wrapperType == freezed
           ? _value.wrapperType
           : wrapperType // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       kind: kind == freezed
           ? _value.kind
           : kind // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       artistId: artistId == freezed
           ? _value.artistId
           : artistId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       collectionId: collectionId == freezed
           ? _value.collectionId
           : collectionId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       trackId: trackId == freezed
           ? _value.trackId
           : trackId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       artistName: artistName == freezed
           ? _value.artistName
           : artistName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       collectionName: collectionName == freezed
           ? _value.collectionName
           : collectionName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       trackName: trackName == freezed
           ? _value.trackName
           : trackName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       collectionCensoredName: collectionCensoredName == freezed
           ? _value.collectionCensoredName
           : collectionCensoredName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       trackCensoredName: trackCensoredName == freezed
           ? _value.trackCensoredName
           : trackCensoredName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       artistViewUrl: artistViewUrl == freezed
           ? _value.artistViewUrl
           : artistViewUrl // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       collectionViewUrl: collectionViewUrl == freezed
           ? _value.collectionViewUrl
           : collectionViewUrl // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       trackViewUrl: trackViewUrl == freezed
           ? _value.trackViewUrl
           : trackViewUrl // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       previewUrl: previewUrl == freezed
           ? _value.previewUrl
           : previewUrl // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       artworkUrl30: artworkUrl30 == freezed
           ? _value.artworkUrl30
           : artworkUrl30 // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       artworkUrl60: artworkUrl60 == freezed
           ? _value.artworkUrl60
           : artworkUrl60 // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       artworkUrl100: artworkUrl100 == freezed
           ? _value.artworkUrl100
           : artworkUrl100 // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       collectionPrice: collectionPrice == freezed
           ? _value.collectionPrice
           : collectionPrice // ignore: cast_nullable_to_non_nullable
-              as double,
+              as double?,
       trackPrice: trackPrice == freezed
           ? _value.trackPrice
           : trackPrice // ignore: cast_nullable_to_non_nullable
-              as double,
+              as double?,
       releaseDate: releaseDate == freezed
           ? _value.releaseDate
           : releaseDate // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       collectionExplicitness: collectionExplicitness == freezed
           ? _value.collectionExplicitness
           : collectionExplicitness // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       trackExplicitness: trackExplicitness == freezed
           ? _value.trackExplicitness
           : trackExplicitness // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       discCount: discCount == freezed
           ? _value.discCount
           : discCount // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       discNumber: discNumber == freezed
           ? _value.discNumber
           : discNumber // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       trackCount: trackCount == freezed
           ? _value.trackCount
           : trackCount // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       trackNumber: trackNumber == freezed
           ? _value.trackNumber
           : trackNumber // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       trackTimeMillis: trackTimeMillis == freezed
           ? _value.trackTimeMillis
           : trackTimeMillis // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       country: country == freezed
           ? _value.country
           : country // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       currency: currency == freezed
           ? _value.currency
           : currency // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       primaryGenreName: primaryGenreName == freezed
           ? _value.primaryGenreName
           : primaryGenreName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       isStreamable: isStreamable == freezed
           ? _value.isStreamable
           : isStreamable // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as bool?,
     ));
   }
 }
@@ -354,37 +354,37 @@ abstract class _$SearchResultCopyWith<$Res>
       __$SearchResultCopyWithImpl<$Res>;
   @override
   $Res call(
-      {String wrapperType,
-      String kind,
-      int artistId,
-      int collectionId,
-      int trackId,
-      String artistName,
-      String collectionName,
-      String trackName,
-      String collectionCensoredName,
-      String trackCensoredName,
-      String artistViewUrl,
-      String collectionViewUrl,
-      String trackViewUrl,
-      String previewUrl,
-      String artworkUrl30,
-      String artworkUrl60,
-      String artworkUrl100,
-      double collectionPrice,
-      double trackPrice,
-      String releaseDate,
-      String collectionExplicitness,
-      String trackExplicitness,
-      int discCount,
-      int discNumber,
-      int trackCount,
-      int trackNumber,
-      int trackTimeMillis,
-      String country,
-      String currency,
-      String primaryGenreName,
-      bool isStreamable});
+      {String? wrapperType,
+      String? kind,
+      int? artistId,
+      int? collectionId,
+      int? trackId,
+      String? artistName,
+      String? collectionName,
+      String? trackName,
+      String? collectionCensoredName,
+      String? trackCensoredName,
+      String? artistViewUrl,
+      String? collectionViewUrl,
+      String? trackViewUrl,
+      String? previewUrl,
+      String? artworkUrl30,
+      String? artworkUrl60,
+      String? artworkUrl100,
+      double? collectionPrice,
+      double? trackPrice,
+      String? releaseDate,
+      String? collectionExplicitness,
+      String? trackExplicitness,
+      int? discCount,
+      int? discNumber,
+      int? trackCount,
+      int? trackNumber,
+      int? trackTimeMillis,
+      String? country,
+      String? currency,
+      String? primaryGenreName,
+      bool? isStreamable});
 }
 
 /// @nodoc
@@ -435,127 +435,127 @@ class __$SearchResultCopyWithImpl<$Res> extends _$SearchResultCopyWithImpl<$Res>
       wrapperType: wrapperType == freezed
           ? _value.wrapperType
           : wrapperType // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       kind: kind == freezed
           ? _value.kind
           : kind // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       artistId: artistId == freezed
           ? _value.artistId
           : artistId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       collectionId: collectionId == freezed
           ? _value.collectionId
           : collectionId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       trackId: trackId == freezed
           ? _value.trackId
           : trackId // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       artistName: artistName == freezed
           ? _value.artistName
           : artistName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       collectionName: collectionName == freezed
           ? _value.collectionName
           : collectionName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       trackName: trackName == freezed
           ? _value.trackName
           : trackName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       collectionCensoredName: collectionCensoredName == freezed
           ? _value.collectionCensoredName
           : collectionCensoredName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       trackCensoredName: trackCensoredName == freezed
           ? _value.trackCensoredName
           : trackCensoredName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       artistViewUrl: artistViewUrl == freezed
           ? _value.artistViewUrl
           : artistViewUrl // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       collectionViewUrl: collectionViewUrl == freezed
           ? _value.collectionViewUrl
           : collectionViewUrl // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       trackViewUrl: trackViewUrl == freezed
           ? _value.trackViewUrl
           : trackViewUrl // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       previewUrl: previewUrl == freezed
           ? _value.previewUrl
           : previewUrl // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       artworkUrl30: artworkUrl30 == freezed
           ? _value.artworkUrl30
           : artworkUrl30 // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       artworkUrl60: artworkUrl60 == freezed
           ? _value.artworkUrl60
           : artworkUrl60 // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       artworkUrl100: artworkUrl100 == freezed
           ? _value.artworkUrl100
           : artworkUrl100 // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       collectionPrice: collectionPrice == freezed
           ? _value.collectionPrice
           : collectionPrice // ignore: cast_nullable_to_non_nullable
-              as double,
+              as double?,
       trackPrice: trackPrice == freezed
           ? _value.trackPrice
           : trackPrice // ignore: cast_nullable_to_non_nullable
-              as double,
+              as double?,
       releaseDate: releaseDate == freezed
           ? _value.releaseDate
           : releaseDate // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       collectionExplicitness: collectionExplicitness == freezed
           ? _value.collectionExplicitness
           : collectionExplicitness // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       trackExplicitness: trackExplicitness == freezed
           ? _value.trackExplicitness
           : trackExplicitness // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       discCount: discCount == freezed
           ? _value.discCount
           : discCount // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       discNumber: discNumber == freezed
           ? _value.discNumber
           : discNumber // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       trackCount: trackCount == freezed
           ? _value.trackCount
           : trackCount // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       trackNumber: trackNumber == freezed
           ? _value.trackNumber
           : trackNumber // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       trackTimeMillis: trackTimeMillis == freezed
           ? _value.trackTimeMillis
           : trackTimeMillis // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       country: country == freezed
           ? _value.country
           : country // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       currency: currency == freezed
           ? _value.currency
           : currency // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       primaryGenreName: primaryGenreName == freezed
           ? _value.primaryGenreName
           : primaryGenreName // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       isStreamable: isStreamable == freezed
           ? _value.isStreamable
           : isStreamable // ignore: cast_nullable_to_non_nullable
-              as bool,
+              as bool?,
     ));
   }
 }
@@ -564,104 +564,104 @@ class __$SearchResultCopyWithImpl<$Res> extends _$SearchResultCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_SearchResult extends _SearchResult {
   const _$_SearchResult(
-      {required this.wrapperType,
-      required this.kind,
-      required this.artistId,
-      required this.collectionId,
-      required this.trackId,
-      required this.artistName,
-      required this.collectionName,
-      required this.trackName,
-      required this.collectionCensoredName,
-      required this.trackCensoredName,
-      required this.artistViewUrl,
-      required this.collectionViewUrl,
-      required this.trackViewUrl,
-      required this.previewUrl,
-      required this.artworkUrl30,
-      required this.artworkUrl60,
-      required this.artworkUrl100,
-      required this.collectionPrice,
-      required this.trackPrice,
-      required this.releaseDate,
-      required this.collectionExplicitness,
-      required this.trackExplicitness,
-      required this.discCount,
-      required this.discNumber,
-      required this.trackCount,
-      required this.trackNumber,
-      required this.trackTimeMillis,
-      required this.country,
-      required this.currency,
-      required this.primaryGenreName,
-      required this.isStreamable})
+      {this.wrapperType,
+      this.kind,
+      this.artistId,
+      this.collectionId,
+      this.trackId,
+      this.artistName,
+      this.collectionName,
+      this.trackName,
+      this.collectionCensoredName,
+      this.trackCensoredName,
+      this.artistViewUrl,
+      this.collectionViewUrl,
+      this.trackViewUrl,
+      this.previewUrl,
+      this.artworkUrl30,
+      this.artworkUrl60,
+      this.artworkUrl100,
+      this.collectionPrice,
+      this.trackPrice,
+      this.releaseDate,
+      this.collectionExplicitness,
+      this.trackExplicitness,
+      this.discCount,
+      this.discNumber,
+      this.trackCount,
+      this.trackNumber,
+      this.trackTimeMillis,
+      this.country,
+      this.currency,
+      this.primaryGenreName,
+      this.isStreamable})
       : super._();
 
   factory _$_SearchResult.fromJson(Map<String, dynamic> json) =>
       _$$_SearchResultFromJson(json);
 
   @override
-  final String wrapperType;
+  final String? wrapperType;
   @override
-  final String kind;
+  final String? kind;
   @override
-  final int artistId;
+  final int? artistId;
   @override
-  final int collectionId;
+  final int? collectionId;
   @override
-  final int trackId;
+  final int? trackId;
   @override
-  final String artistName;
+  final String? artistName;
   @override
-  final String collectionName;
+  final String? collectionName;
   @override
-  final String trackName;
+  final String? trackName;
   @override
-  final String collectionCensoredName;
+  final String? collectionCensoredName;
   @override
-  final String trackCensoredName;
+  final String? trackCensoredName;
   @override
-  final String artistViewUrl;
+  final String? artistViewUrl;
   @override
-  final String collectionViewUrl;
+  final String? collectionViewUrl;
   @override
-  final String trackViewUrl;
+  final String? trackViewUrl;
   @override
-  final String previewUrl;
+  final String? previewUrl;
   @override
-  final String artworkUrl30;
+  final String? artworkUrl30;
   @override
-  final String artworkUrl60;
+  final String? artworkUrl60;
   @override
-  final String artworkUrl100;
+  final String? artworkUrl100;
   @override
-  final double collectionPrice;
+  final double? collectionPrice;
   @override
-  final double trackPrice;
+  final double? trackPrice;
   @override
-  final String releaseDate;
+  final String? releaseDate;
   @override
-  final String collectionExplicitness;
+  final String? collectionExplicitness;
   @override
-  final String trackExplicitness;
+  final String? trackExplicitness;
   @override
-  final int discCount;
+  final int? discCount;
   @override
-  final int discNumber;
+  final int? discNumber;
   @override
-  final int trackCount;
+  final int? trackCount;
   @override
-  final int trackNumber;
+  final int? trackNumber;
   @override
-  final int trackTimeMillis;
+  final int? trackTimeMillis;
   @override
-  final String country;
+  final String? country;
   @override
-  final String currency;
+  final String? currency;
   @override
-  final String primaryGenreName;
+  final String? primaryGenreName;
   @override
-  final bool isStreamable;
+  final bool? isStreamable;
 
   @override
   String toString() {
@@ -783,104 +783,104 @@ class _$_SearchResult extends _SearchResult {
 
 abstract class _SearchResult extends SearchResult {
   const factory _SearchResult(
-      {required String wrapperType,
-      required String kind,
-      required int artistId,
-      required int collectionId,
-      required int trackId,
-      required String artistName,
-      required String collectionName,
-      required String trackName,
-      required String collectionCensoredName,
-      required String trackCensoredName,
-      required String artistViewUrl,
-      required String collectionViewUrl,
-      required String trackViewUrl,
-      required String previewUrl,
-      required String artworkUrl30,
-      required String artworkUrl60,
-      required String artworkUrl100,
-      required double collectionPrice,
-      required double trackPrice,
-      required String releaseDate,
-      required String collectionExplicitness,
-      required String trackExplicitness,
-      required int discCount,
-      required int discNumber,
-      required int trackCount,
-      required int trackNumber,
-      required int trackTimeMillis,
-      required String country,
-      required String currency,
-      required String primaryGenreName,
-      required bool isStreamable}) = _$_SearchResult;
+      {String? wrapperType,
+      String? kind,
+      int? artistId,
+      int? collectionId,
+      int? trackId,
+      String? artistName,
+      String? collectionName,
+      String? trackName,
+      String? collectionCensoredName,
+      String? trackCensoredName,
+      String? artistViewUrl,
+      String? collectionViewUrl,
+      String? trackViewUrl,
+      String? previewUrl,
+      String? artworkUrl30,
+      String? artworkUrl60,
+      String? artworkUrl100,
+      double? collectionPrice,
+      double? trackPrice,
+      String? releaseDate,
+      String? collectionExplicitness,
+      String? trackExplicitness,
+      int? discCount,
+      int? discNumber,
+      int? trackCount,
+      int? trackNumber,
+      int? trackTimeMillis,
+      String? country,
+      String? currency,
+      String? primaryGenreName,
+      bool? isStreamable}) = _$_SearchResult;
   const _SearchResult._() : super._();
 
   factory _SearchResult.fromJson(Map<String, dynamic> json) =
       _$_SearchResult.fromJson;
 
   @override
-  String get wrapperType;
+  String? get wrapperType;
   @override
-  String get kind;
+  String? get kind;
   @override
-  int get artistId;
+  int? get artistId;
   @override
-  int get collectionId;
+  int? get collectionId;
   @override
-  int get trackId;
+  int? get trackId;
   @override
-  String get artistName;
+  String? get artistName;
   @override
-  String get collectionName;
+  String? get collectionName;
   @override
-  String get trackName;
+  String? get trackName;
   @override
-  String get collectionCensoredName;
+  String? get collectionCensoredName;
   @override
-  String get trackCensoredName;
+  String? get trackCensoredName;
   @override
-  String get artistViewUrl;
+  String? get artistViewUrl;
   @override
-  String get collectionViewUrl;
+  String? get collectionViewUrl;
   @override
-  String get trackViewUrl;
+  String? get trackViewUrl;
   @override
-  String get previewUrl;
+  String? get previewUrl;
   @override
-  String get artworkUrl30;
+  String? get artworkUrl30;
   @override
-  String get artworkUrl60;
+  String? get artworkUrl60;
   @override
-  String get artworkUrl100;
+  String? get artworkUrl100;
   @override
-  double get collectionPrice;
+  double? get collectionPrice;
   @override
-  double get trackPrice;
+  double? get trackPrice;
   @override
-  String get releaseDate;
+  String? get releaseDate;
   @override
-  String get collectionExplicitness;
+  String? get collectionExplicitness;
   @override
-  String get trackExplicitness;
+  String? get trackExplicitness;
   @override
-  int get discCount;
+  int? get discCount;
   @override
-  int get discNumber;
+  int? get discNumber;
   @override
-  int get trackCount;
+  int? get trackCount;
   @override
-  int get trackNumber;
+  int? get trackNumber;
   @override
-  int get trackTimeMillis;
+  int? get trackTimeMillis;
   @override
-  String get country;
+  String? get country;
   @override
-  String get currency;
+  String? get currency;
   @override
-  String get primaryGenreName;
+  String? get primaryGenreName;
   @override
-  bool get isStreamable;
+  bool? get isStreamable;
   @override
   @JsonKey(ignore: true)
   _$SearchResultCopyWith<_SearchResult> get copyWith =>
