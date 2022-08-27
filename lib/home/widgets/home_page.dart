@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
                             child: ListTile(
                               leading: Image.network(data.artworkUrl60!),
                               title: Text(
-                                data.trackCensoredName!,
+                                data.trackName!,
                                 style: const TextStyle(
                                     fontWeight: FontWeight.bold),
                               ),
