@@ -4,7 +4,10 @@ import 'package:music_player/base_http.dart';
 import 'package:music_player/home/repo/models.dart';
 
 class SearchApi extends BaseHttpClient {
-  Future<PaginatedSearchResult> getSongs({Map<String, dynamic>? params}) async {
+  Future<PaginatedSearchResult> getSongs({required String query}) async {
+    var params = defaultParams;
+    params['term'] = query;
+
     try {
       var res = await getData(params: params);
       var decoded = json.decode(res!);

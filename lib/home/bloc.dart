@@ -11,11 +11,9 @@ class SearchBloc {
   Stream<List<SearchResult>?> get searchReultList =>
       _searchResultController.stream;
 
-  Future<void> getSongs({Map<String, dynamic>? params}) async {
+  Future<void> getSongs({String query = ''}) async {
     try {
-      var res = await _searchApi.getSongs(
-        params: params,
-      );
+      var res = await _searchApi.getSongs(query: query);
       var songs = res.results;
       _searchResultController.add(songs);
     } catch (e) {

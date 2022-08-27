@@ -6,6 +6,8 @@ class BaseHttpClient {
         'Accept': 'application/json',
       };
 
+  Map<String, dynamic> get defaultParams => {'entity': 'song'};
+
   Uri _generateUri(Map<String, dynamic>? params) {
     var apiUri = Uri.parse('https://itunes.apple.com/search');
 
