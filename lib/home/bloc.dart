@@ -7,12 +7,13 @@ class SongBloc {
   final _searchApi = serviceLocator<SearchApi>();
 
   final _searchResultController = BehaviorSubject<List<SearchResult>?>();
-  final _playSongController = BehaviorSubject<bool>.seeded(false);
+  final _playSongController = BehaviorSubject<int?>();
+  final _songPlayingController = BehaviorSubject<bool?>();
 
   Stream<List<SearchResult>?> get searchReultStream =>
       _searchResultController.stream;
-
-  Stream<bool> get playSongStream => _playSongController.stream;
+  Stream<int?> get playSongStream => _playSongController.stream;
+  Stream<bool?> get songPlaying => _songPlayingController.stream;
 
   Future<void> getSongs({String query = ''}) async {
     try {
@@ -24,12 +25,17 @@ class SongBloc {
     }
   }
 
-  void setPlaySong({bool isPlaying = false}) {
-    _playSongController.add(isPlaying);
+  void setPlaySong({required int trackId, bool isPlaying = true}) {
+    setSongPlaying(isPlaying: isPlaying);
+    _playSongController.add(trackId);
+  }
+
+  void setSongPlaying({required bool isPlaying}) {
+    _songPlayingController.add(isPlaying);
   }
 
   void clearPlaySongStream() {
-    _playSongController.add(false);
+    _playSongController.add(null);
   }
 
   void clearSearchResultsStream() {
