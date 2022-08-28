@@ -1,16 +1,22 @@
 # music_player
 
-A new Flutter project.
+## Supported devices
+- Android 5.0 and above
 
-## Getting Started
+## Supported features
+- Search song
+- Play and pause song
 
-This project is a starting point for a Flutter application.
+## List of libraries/dependencies and its functionalities
+### dependencies:
+- http -> for making request to API
+- freezed_annotation -> annotations for freezed
+- get_it -> for service locator
+- rxdart -> for state management
+- audioplayers -> for audio control (play & pause)
 
-A few resources to get you started if this is your first Flutter project:
+### dev dependencies:
+- build_runner -> for generating files
+- json_serializable -> for generating to/from JSON code for a class
+- freezed -> code generator for immutable classes
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
