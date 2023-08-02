@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      floatingActionButton: const _MeidaControl(),
+      floatingActionButton: const _MediaControl(),
     );
   }
 }
@@ -126,14 +126,14 @@ class _SongItem extends StatelessWidget {
   }
 }
 
-class _MeidaControl extends StatefulWidget {
-  const _MeidaControl({Key? key}) : super(key: key);
+class _MediaControl extends StatefulWidget {
+  const _MediaControl({Key? key}) : super(key: key);
 
   @override
-  State<_MeidaControl> createState() => _MeidaControlState();
+  State<_MediaControl> createState() => _MediaControlState();
 }
 
-class _MeidaControlState extends State<_MeidaControl> {
+class _MediaControlState extends State<_MediaControl> {
   final _songBloc = serviceLocator<SongBloc>();
   final _audioPlayer = serviceLocator<AudioPlayerHelper>();
   late StreamSubscription<PlayerState> _audioPlayerListener;
